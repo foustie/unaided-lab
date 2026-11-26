@@ -11,23 +11,20 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body data-mode="unaided">
+<body>
   <canvas id="cortex-canvas" aria-hidden="true"></canvas>
   <div class="vignette" aria-hidden="true"></div>
 
   <div class="shell">
     <header class="top">
-      <a class="logo" href="/">
-        <span class="led" aria-hidden="true"></span>
-        <span>UNAIDED LAB</span>
-      </a>
-      <nav class="links">
-        <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GitHub</a>
+      <a class="logo" href="/">UNAIDED LAB</a>
+      <nav class="links" aria-label="Primary">
         <a href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">Manifesto</a>
-        <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Founder</a>
+        <a href="https://github.com/foustie/unaided-lab/tree/main/datasets" target="_blank" rel="noopener">Datasets</a>
+        <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </header>
 
@@ -40,28 +37,21 @@
         Open lab working to "ensure that AGI benefits all of our brains."
       </p>
 
-      <div class="controls">
-        <div class="switch" role="tablist" aria-label="Cortex state">
-          <button class="sw-btn" type="button" role="tab" aria-selected="false" data-mode="crutch">Crutch</button>
-          <button class="sw-btn is-active" type="button" role="tab" aria-selected="true" data-mode="unaided">Unaided</button>
-        </div>
-
-        <div class="eeg-inline" aria-label="Live brainwave trace">
-          <canvas id="eeg-canvas" height="44"></canvas>
-          <span class="eeg-stat" id="eeg-stat">38 Hz</span>
-        </div>
+      <div class="actions">
+        <a class="btn-primary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
+        <a class="btn-secondary" href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">Read Manifesto</a>
       </div>
     </main>
 
     <footer class="bottom">
       <div class="proofs">
-        <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep (7.6K students, $0 ads)</a>
+        <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep (7,630 students, $0 ads)</a>
         <span class="sep">/</span>
-        <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a>
+        <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures #8450</a>
         <span class="sep">/</span>
-        <a href="https://github.com/foustie/unaided-lab/tree/main/datasets" target="_blank" rel="noopener">Open Datasets</a>
+        <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Diyar Zhakpelov</a>
       </div>
-      <a class="cta" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute -&gt;</a>
+      <a class="llms" href="/llms.txt">llms.txt</a>
     </footer>
   </div>
 
