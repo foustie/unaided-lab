@@ -117,11 +117,9 @@
       const b = projected[edges[i][1]];
       const avgDepth = (a.depth + b.depth) * 0.5;
       const hot = Math.max(a.charge, b.charge);
-      const alpha = 0.045 + avgDepth * 0.09 + hot * 0.26;
-      ctx.strokeStyle = hot > 0.25
-        ? `rgba(229, 72, 43, ${alpha.toFixed(3)})`
-        : `rgba(245, 243, 238, ${alpha.toFixed(3)})`;
-      ctx.lineWidth = 0.75 + hot * 0.7;
+      const alpha = 0.045 + avgDepth * 0.095 + hot * 0.34;
+      ctx.strokeStyle = `rgba(245, 245, 245, ${Math.min(0.92, alpha).toFixed(3)})`;
+      ctx.lineWidth = 0.75 + hot * 0.85;
       ctx.beginPath();
       ctx.moveTo(a.sx, a.sy);
       ctx.lineTo(b.sx, b.sy);
@@ -133,7 +131,7 @@
       const s = signals[i];
       s.p += s.speed;
       if (s.p >= 1) {
-        points[s.b].charge = Math.min(1, points[s.b].charge + 0.85);
+        points[s.b].charge = Math.min(1, points[s.b].charge + 0.9);
         signals.splice(i, 1);
         continue;
       }
@@ -141,20 +139,18 @@
       const b = projected[s.b];
       const px = a.sx + (b.sx - a.sx) * s.p;
       const py = a.sy + (b.sy - a.sy) * s.p;
-      ctx.fillStyle = "rgba(229, 72, 43, 0.92)";
+      ctx.fillStyle = "rgba(255, 255, 255, 0.96)";
       ctx.beginPath();
-      ctx.arc(px, py, 2.1, 0, Math.PI * 2);
+      ctx.arc(px, py, 2.2, 0, Math.PI * 2);
       ctx.fill();
     }
 
     // Draw nodes
     for (let i = 0; i < projected.length; i++) {
       const n = projected[i];
-      const alpha = 0.16 + n.depth * 0.45 + n.charge * 0.35;
-      const r = 1.2 + n.depth * 1.4 + n.charge * 1.3;
-      ctx.fillStyle = n.charge > 0.3
-        ? `rgba(229, 72, 43, ${Math.min(1, alpha).toFixed(3)})`
-        : `rgba(245, 243, 238, ${Math.min(1, alpha).toFixed(3)})`;
+      const alpha = 0.15 + n.depth * 0.45 + n.charge * 0.4;
+      const r = 1.2 + n.depth * 1.4 + n.charge * 1.4;
+      ctx.fillStyle = `rgba(255, 255, 255, ${Math.min(1, alpha).toFixed(3)})`;
       ctx.beginPath();
       ctx.arc(n.sx, n.sy, r, 0, Math.PI * 2);
       ctx.fill();

@@ -1,11 +1,11 @@
 :root {
-  --bg: #09090B;
-  --ink: #F5F3EE;
-  --ink-soft: #B4B2AC;
-  --ink-muted: #706E68;
-  --line: rgba(245, 243, 238, 0.12);
-  --line-strong: rgba(245, 243, 238, 0.28);
-  --accent: #E5482B;
+  --bg: #0A0A0B;
+  --ink: #F5F5F5;
+  --ink-soft: #A1A1A6;
+  --ink-muted: #6E6E73;
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(255, 255, 255, 0.28);
+  --accent: #8A8A8E;
   --font-display: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 }
@@ -15,12 +15,12 @@
 }
 
 ::selection {
-  background: var(--accent);
-  color: #FFFFFF;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--ink);
   outline-offset: 3px;
 }
 
