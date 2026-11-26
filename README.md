@@ -13,7 +13,7 @@ Unaided Lab is an open public-good research lab building free anti-dependency AI
 
 | Track | Status | Summary |
 | :--- | :--- | :--- |
-| **01. ENTprep** | Live testbed | Free bilingual (RU/KZ) exam trainer built solo at 17; reached 7,630+ students on $0 ads, backed by Emergent Ventures ($10K). |
+| **01. ENTprep** | Open source / Live | Free bilingual (RU/KZ) exam trainer ([github.com/foustie/entprep](https://github.com/foustie/entprep), [entprep.org](https://entprep.org)); 7,630+ students on $0 ads, 30K+ questions, backed by Emergent Ventures ($10K). |
 | **02. Global Student Blueprint** | Building now | Verified side-by-side roadmaps comparing local grants with 100% funded international scholarships plus real graduate outcomes. |
 | **03. Human Uplift Benchmark** | Research | Open A/B harness measuring whether AI tutoring methods actually raise unaided human scores 48 hours later on mutated closed-book problems. |
 | **04. Open Datasets** | Open JSON | Community-maintained registries in `/datasets` covering scholarships, university cutoffs, and graduate outcomes. |
