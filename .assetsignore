@@ -2,6 +2,7 @@
 .gitignore
 .assetsignore
 .vercel
+.wrangler
 wrangler.jsonc
 README.md
 CONTRIBUTING.md
