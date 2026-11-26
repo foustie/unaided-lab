@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Unaided Lab: AI that makes you smarter without it</title>
-  <meta name="description" content="An open public-good research lab building free anti-dependency AI learning tools, honest university and scholarship blueprints, and open benchmarks measuring real unaided human score gains.">
+  <meta name="description" content="An open public-good lab working to ensure that AGI benefits all of our brains. Free anti-dependency learning tools, global scholarship blueprints, and 48-hour unaided human benchmarks.">
   <meta property="og:title" content="Unaided Lab: AI that makes you smarter without it">
-  <meta property="og:description" content="Open research and free public tools fighting AI cognitive dependency in education. Starting from 7,630+ students on ENTprep, expanding globally.">
+  <meta property="og:description" content="Win the battle, lose the war. Unaided Lab is an open lab working to ensure that AGI benefits all of our brains.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,285 +14,97 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Unaided Lab home">
-        <span class="brand-mark">Unaided<span class="dot">.</span></span>
-        <span class="brand-tag">OPEN LAB</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#thesis">Thesis</a>
-        <a href="#projects">Projects</a>
-        <a href="#contribute">Contribute</a>
-        <a class="nav-cta" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GitHub</a>
-      </nav>
-    </div>
-  </header>
+<body data-mode="unaided">
+  <canvas id="cortex-canvas" aria-hidden="true"></canvas>
+  <div class="scanline" aria-hidden="true"></div>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="pulse-dot" aria-hidden="true"></span>
-          <span>PUBLIC GOOD · OPEN SOURCE · FREE FOREVER</span>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <span class="status-led" aria-hidden="true"></span>
+        <span class="brand-name">UNAIDED LAB</span>
+        <span class="brand-sep">/</span>
+        <span class="brand-sub">OPEN COGNITIVE COLLECTIVE</span>
+      </div>
+      <div class="top-links">
+        <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GITHUB</a>
+        <a href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">PROTOCOL</a>
+        <a href="https://diyar.atla.kz" target="_blank" rel="noopener">FOUNDER</a>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="hero-block">
+        <div class="telemetry-row" aria-live="polite">
+          <span class="pill" id="state-pill">STATE: UNAIDED RECALL</span>
+          <span class="tele-item">CORTEX <strong id="val-load">88%</strong></span>
+          <span class="tele-item">FREQ <strong id="val-hz">38.4 Hz (GAMMA)</strong></span>
+          <span class="tele-item">48H TRANSFER <strong id="val-ret">HIGH</strong></span>
         </div>
-        <h1 class="hero-title">
+
+        <h1 class="motto">
           AI that makes you smarter <em>without it.</em>
         </h1>
-        <p class="hero-motto">
-          Everyone is building AI to think for you. We build open tools so your own mind stays stronger than the machine.
+
+        <p class="manifesto">
+          Everyone focuses on scaling AI compute while forgetting what happens to human brains. Every frontier model is trained to hand out instant answers: you paste a hard problem into a chat box, win the battle, and lose the war. Unaided Lab is an open lab where anyone can contribute and actively work to <span class="quote-highlight">"ensure that AGI benefits all of our brains."</span>
         </p>
-        <p class="hero-lead">
-          Right now, an entire generation is getting dependent on prompt boxes while real exam prep and university pathways stay locked behind expensive agencies. Unaided Lab is an open public-good lab building free anti-dependency learning tools, honest university outcome data, verified global scholarship blueprints, and public benchmarks measuring whether AI actually raises unaided human scores.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#demo">Try the thesis demo</a>
-          <a class="btn btn-secondary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
-          <a class="btn btn-ghost" href="#receipts">Verify our receipts</a>
-        </div>
-      </div>
-    </section>
 
-    <section id="receipts" class="receipts-band" aria-label="Verified traction">
-      <div class="container">
-        <div class="receipts-grid">
-          <div class="receipt-cell">
-            <div class="receipt-num">7,630+</div>
-            <div class="receipt-label">Students reached on Testbed #01 (<a href="https://entprep.org" target="_blank" rel="noopener">ENTprep</a>), $0 ad spend</div>
+        <div class="mode-dock">
+          <div class="mode-switch" role="tablist" aria-label="Brain activity simulation mode">
+            <button class="mode-btn" type="button" role="tab" aria-selected="false" data-mode="crutch">
+              <span class="dot"></span>
+              PROMPT CRUTCH
+            </button>
+            <button class="mode-btn is-active" type="button" role="tab" aria-selected="true" data-mode="unaided">
+              <span class="dot"></span>
+              UNAIDED BRAIN
+            </button>
           </div>
-          <div class="receipt-cell">
-            <div class="receipt-num">$10K</div>
-            <div class="receipt-label">Backed early by <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a> (Grant #8450)</div>
-          </div>
-          <div class="receipt-cell">
-            <div class="receipt-num">28,593</div>
-            <div class="receipt-label">Structured bilingual exam items already built in-house</div>
-          </div>
-          <div class="receipt-cell">
-            <div class="receipt-num">$0</div>
-            <div class="receipt-label">Cost to students for core prep and admissions blueprints</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="thesis" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono-idx">00 / THE PROBLEM</span>
-          <h2>Two broken defaults we are replacing</h2>
-        </div>
-
-        <div class="two-col">
-          <article class="card">
-            <div class="card-kicker">COGNITIVE DEPENDENCY</div>
-            <h3>Standard AI creates the illusion of learning.</h3>
-            <p>
-              ChatGPT and Claude are optimized to be maximally helpful and solve problems fast. A student pastes a hard question, reads a clean explanation, feels confident, and then fails a closed-book exam because their own brain never did the retrieval work.
-            </p>
-            <p class="card-note">
-              Frontier labs benchmark whether <strong>models</strong> pass exams. Almost nobody benchmarks which AI loop actually raises a <strong>human's</strong> unaided score 48 hours later.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-kicker">GATEKEPT OPPORTUNITY</div>
-            <h3>Admissions truth is locked behind pricey agencies.</h3>
-            <p>
-              Outside wealthy schools, ambitious teenagers pay thousands of dollars to prep centers and consulting agencies just for basic exam prep, realistic university outcome data, and scholarship checklists that should be public knowledge.
-            </p>
-            <p class="card-note">
-              We pair real graduate outcome data and verified student reviews with open full-ride scholarship blueprints so talent is never capped by family income.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="demo" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono-idx">01 / INTERACTIVE COMPARISON</span>
-          <h2>Crutch AI vs. Unaided Loop</h2>
-          <p class="section-sub">
-            Click through the exact same student question to see why standard AI produces dependency and how Unaided forces real recall.
+          <p class="mode-caption" id="mode-caption">
+            Active retrieval firing across pathways. Move cursor or tap canvas to trigger synaptic recall.
           </p>
         </div>
 
-        <div class="demo-shell">
-          <div class="demo-bar">
-            <div class="demo-tabs" role="tablist" aria-label="Comparison mode">
-              <button class="demo-tab is-active" type="button" role="tab" aria-selected="true" data-mode="crutch">Standard AI (Crutch)</button>
-              <button class="demo-tab" type="button" role="tab" aria-selected="false" data-mode="unaided">Unaided Loop (Ours)</button>
-            </div>
-            <div class="demo-meta" id="demo-metric">48h unaided retention: low</div>
+        <div class="eeg-wrap" aria-label="Live simulated EEG brainwave monitor">
+          <div class="eeg-head">
+            <span>EEG TRACE // PREFRONTAL RETRIEVAL MONITOR</span>
+            <span id="eeg-channel">CH-01 GAMMA SYNC · LIVE</span>
           </div>
-
-          <div class="demo-body">
-            <div class="demo-prompt">
-              <div class="mono-label">STUDENT PROBLEM (CLOSED-BOOK EXAM PREP)</div>
-              <p>A train leaves at 60 km/h. Two hours later, a faster train leaves from the same station at 90 km/h. How many hours until the second train catches up?</p>
-            </div>
-
-            <div class="demo-feed" id="demo-feed" aria-live="polite"></div>
-
-            <div class="demo-controls" id="demo-controls"></div>
-          </div>
+          <canvas id="eeg-canvas" height="78"></canvas>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono-idx">02 / THE OPEN STACK</span>
-          <h2>Four active tracks under one public lab</h2>
-          <p class="section-sub">
-            Every project ships in the open. Proved first on Kazakhstan's national exam (ENT), now expanding into an international open-source infrastructure for students worldwide.
-          </p>
-        </div>
-
-        <div class="tracks-grid">
-          <article class="track-card">
-            <div class="track-top">
-              <span class="mono-idx">TRACK 01</span>
-              <span class="badge badge-live">LIVE TESTBED</span>
-            </div>
-            <h3>ENTprep</h3>
-            <p>
-              Our first proof-of-concept: a free bilingual AI exam trainer built solo at 17 that reached 7,630+ students on zero ad spend, with teachers onboarding their own classes organically.
-            </p>
-            <div class="track-foot">
-              <a href="https://entprep.org" target="_blank" rel="noopener">entprep.org</a>
-              <span class="mono-muted">Kazakhstan · 28.5K items</span>
-            </div>
-          </article>
-
-          <article class="track-card">
-            <div class="track-top">
-              <span class="mono-idx">TRACK 02</span>
-              <span class="badge badge-building">BUILDING NOW</span>
-            </div>
-            <h3>Global Student Blueprint</h3>
-            <p>
-              Free, verified reverse-engineered roadmaps comparing local university grants against 100% funded international scholarships (Stipendium Hungaricum, GKS, CSC, EU tuition-free programs), paired with honest graduate outcome data and uncensored student reviews.
-            </p>
-            <div class="track-foot">
-              <a href="https://github.com/foustie/unaided-lab/blob/main/datasets/scholarships-2027.json" target="_blank" rel="noopener">Starter JSON live</a>
-              <span class="mono-muted">Global · Zero agency upsells</span>
-            </div>
-          </article>
-
-          <article class="track-card">
-            <div class="track-top">
-              <span class="mono-idx">TRACK 03</span>
-              <span class="badge badge-research">RESEARCH</span>
-            </div>
-            <h3>Human Uplift Benchmark</h3>
-            <p>
-              An open experimental harness running randomized A/B studies across real students to measure 48-hour unaided transfer rates (direct answers vs. diagnostic Socratic forcing vs. mutated spaced retrieval).
-            </p>
-            <div class="track-foot">
-              <a href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">Read methodology</a>
-              <span class="mono-muted">Open evals · Reproducible data</span>
-            </div>
-          </article>
-
-          <article class="track-card">
-            <div class="track-top">
-              <span class="mono-idx">TRACK 04</span>
-              <span class="badge badge-open">OPEN DATA</span>
-            </div>
-            <h3>Public Admissions &amp; Exam Datasets</h3>
-            <p>
-              Community-maintained JSON registries of verified university cutoffs, graduate employment statistics, scholarship deadlines, and open exam curricula so any builder worldwide can ship local tools on clean ground truth.
-            </p>
-            <div class="track-foot">
-              <a href="https://github.com/foustie/unaided-lab/tree/main/datasets" target="_blank" rel="noopener">Browse /datasets</a>
-              <span class="mono-muted">MIT / CC-BY open license</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contribute" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono-idx">03 / OPEN COLLABORATION</span>
-          <h2>Anyone can contribute today</h2>
-          <p class="section-sub">
-            Unaided Lab is built as an open collective, not a closed company. Students, teachers, researchers, and engineers from any country can open a pull request.
-          </p>
-        </div>
-
-        <div class="contrib-grid">
-          <div class="contrib-item">
-            <span class="mono-idx">01</span>
-            <h3>Add a scholarship or cutoff</h3>
-            <p>Submit verified 2027 requirements, quotas, or official deadlines for a university or full-ride program in your country.</p>
-          </div>
-          <div class="contrib-item">
-            <span class="mono-idx">02</span>
-            <h3>Share honest uni outcomes</h3>
-            <p>Help replace glossy brochures with real graduate employment links, tuition reality, and transparent student feedback.</p>
-          </div>
-          <div class="contrib-item">
-            <span class="mono-idx">03</span>
-            <h3>Build a local exam module</h3>
-            <p>Plug in national exam specifications (SAT, A-Levels, Gaokao, JEE, YKS, ENT) into the anti-dependency trainer engine.</p>
-          </div>
-          <div class="contrib-item">
-            <span class="mono-idx">04</span>
-            <h3>Run uplift experiments</h3>
-            <p>Contribute prompt harnesses, spaced-retrieval algorithms, and open evaluation scripts measuring unaided student transfer.</p>
+      <section class="specimen-strip" aria-label="Proof and open lab tracks">
+        <div class="strip-col">
+          <div class="col-label">01 / PROVEN TESTBED</div>
+          <div class="col-main">
+            <strong>7,630+ students</strong> on <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep</a> ($0 ads) · Backed by <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a> ($10K, Grant #8450)
           </div>
         </div>
 
-        <div class="contrib-box">
-          <div>
-            <div class="mono-label">START CONTRIBUTING</div>
-            <p class="contrib-cmd"><code>git clone https://github.com/foustie/unaided-lab.git</code></p>
-          </div>
-          <div class="contrib-actions">
-            <button class="btn btn-secondary" type="button" id="copy-clone">Copy clone command</button>
-            <a class="btn btn-primary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Open GitHub repo</a>
+        <div class="strip-col">
+          <div class="col-label">02 / WHAT WE BUILD (FREE FOREVER)</div>
+          <div class="col-main">
+            Anti-dependency learning engines · Honest global university outcomes &amp; full-ride <a href="https://github.com/foustie/unaided-lab/blob/main/datasets/scholarships-2027.json" target="_blank" rel="noopener">scholarship blueprints</a> · Open 48h human-uplift benchmarks
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section founder-section">
-      <div class="container">
-        <div class="founder-card">
-          <div>
-            <span class="mono-idx">04 / FOUNDED BY</span>
-            <h2>Diyar Zhakpelov</h2>
-            <blockquote class="founder-quote">
-              "At 17 in Almaty, I built ENTprep solo and watched 7,630 students prepare for their national university exam for free. Most smart kids around the world do not lack talent; they lack honest data and tools that actually build their own minds. Unaided Lab is my bet on giving students everywhere that infrastructure, open and free forever."
-            </blockquote>
-            <p>
-              18, Almaty, Kazakhstan. Creator of ENTprep (7,630+ students on $0 ad spend), first Emergent Ventures grantee from Kazakhstan ($10,000, Tyler Cowen / Mercatus Center), 2nd place of 2,500+ at nFactorial Incubator 2026, and full-stack AI systems engineer.
-            </p>
-            <div class="founder-links">
-              <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Portfolio &amp; proofs (diyar.atla.kz)</a>
-              <a href="https://github.com/foustie" target="_blank" rel="noopener">GitHub (@foustie)</a>
-              <a href="mailto:dzakpelov@gmail.com">dzakpelov@gmail.com</a>
-              <a href="/llms.txt">llms.txt</a>
-            </div>
+        <div class="strip-col strip-cta">
+          <div class="col-label">03 / JOIN THE OPEN LAB</div>
+          <div class="cta-row">
+            <a class="action-primary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
+            <a class="action-secondary" href="mailto:dzakpelov@gmail.com">Email Diyar</a>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>Unaided Lab · Open Public-Good AI Learning Lab</span>
-      <span class="mono-muted">Built in Almaty for students everywhere</span>
-    </div>
-  </footer>
+    <footer class="foot">
+      <span>Started by <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Diyar Zhakpelov</a> (18, Almaty) for students everywhere</span>
+      <span><a href="/llms.txt">llms.txt</a> · <a href="https://github.com/foustie/unaided-lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contributing</a></span>
+    </footer>
+  </div>
 
   <script src="/app.js"></script>
 </body>
