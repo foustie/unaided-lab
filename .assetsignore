@@ -1,0 +1,8 @@
+.git
+.gitignore
+.assetsignore
+.vercel
+wrangler.jsonc
+README.md
+CONTRIBUTING.md
+MANIFESTO.md

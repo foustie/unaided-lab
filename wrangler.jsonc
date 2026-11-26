@@ -1,0 +1,10 @@
+{
+  "name": "unaided-lab",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./",
+    "html_handling": "auto-trailing-slash"
+  },
+  "workers_dev": true,
+  "routes": [{ "pattern": "unaided.atla.kz", "custom_domain": true }]
+}
