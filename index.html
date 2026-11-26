@@ -18,29 +18,82 @@
   <canvas id="cortex-canvas" aria-hidden="true"></canvas>
   <div class="vignette" aria-hidden="true"></div>
 
-  <div class="shell">
-    <header class="top">
-      <a class="logo" href="/">UNAIDED LAB</a>
-    </header>
+  <div class="page">
+    <section class="hero-screen">
+      <header class="top">
+        <a class="logo" href="/">UNAIDED LAB</a>
+      </header>
 
-    <main class="center">
-      <h1 class="headline">
-        AI that makes you smarter <span class="accent">without it.</span>
-      </h1>
+      <main class="center">
+        <h1 class="headline">
+          AI that makes you smarter <span class="accent">without it.</span>
+        </h1>
 
-      <p class="sub">
-        Open lab working to "ensure that AGI benefits all of our brains."
-      </p>
+        <p class="sub">
+          Open lab working to "ensure that AGI benefits all of our brains."
+        </p>
 
-      <div class="actions">
-        <a class="btn-primary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
-        <a class="btn-secondary" href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">Read Manifesto</a>
+        <div class="actions">
+          <a class="btn-primary" href="#problem">Read Manifesto</a>
+          <a class="btn-secondary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
+        </div>
+      </main>
+
+      <footer class="hero-foot">
+        <a class="ev" href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a>
+        <a class="scroll-cue" href="#problem">The Problem</a>
+      </footer>
+    </section>
+
+    <article id="problem" class="essay">
+      <div class="essay-inner">
+        <section class="essay-block">
+          <h2>Win the battle, lose the war.</h2>
+          <p>
+            Everyone in AI is focused on scaling compute and making models smarter, while ignoring what happens to human brains. Frontier models are trained to hand over the finished answer on turn one. A student pastes a hard problem into a chat box, feels like they understood it, and then freezes the second the test or real work is closed-book.
+          </p>
+          <p>
+            Big labs benchmark whether <strong>models</strong> can pass human exams (MMLU, MATH, GPQA). Almost nobody runs open experiments measuring whether an AI interaction actually raises a <strong>human's</strong> unaided score 48 hours later.
+          </p>
+          <p>
+            At the same time, real exam prep and transparent paths into top universities or full-ride scholarships stay locked behind expensive courses and consulting agencies. Outside wealthy schools, smart kids pay for information and training that should be open and free.
+          </p>
+        </section>
+
+        <section class="essay-block">
+          <h2>What we are building</h2>
+          <div class="list">
+            <div class="row">
+              <h3>Anti-dependency learning loops</h3>
+              <p>Free tools that refuse instant crutches, pinpoint the exact missing step in a student's thinking, and resurface mutated problems two days later with zero AI assistance.</p>
+            </div>
+            <div class="row">
+              <h3>48-hour unaided transfer benchmark (U48)</h3>
+              <p>Open randomized A/B studies across real students measuring cold closed-book retention across different AI teaching loops, published with reproducible prompts and aggregate data.</p>
+            </div>
+            <div class="row">
+              <h3>Open global student blueprints</h3>
+              <p>Verified university outcomes, real graduate employment data, and 100% funded international scholarship roadmaps so students anywhere can see their real options without predatory agencies.</p>
+            </div>
+            <div class="row">
+              <h3>Starting from real proof</h3>
+              <p>Built on the track record of <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep</a>, a free exam trainer built solo at 17 that reached 7,630+ students on $0 of ads and earned an <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a> grant.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="essay-foot">
+          <div class="foot-left">
+            Open public-good lab started by <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Diyar Zhakpelov</a>.
+          </div>
+          <div class="foot-links">
+            <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/foustie/unaided-lab/tree/main/datasets" target="_blank" rel="noopener">Datasets</a>
+            <a href="mailto:dzakpelov@gmail.com">Email</a>
+          </div>
+        </footer>
       </div>
-    </main>
-
-    <footer class="bottom">
-      <a class="ev" href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a>
-    </footer>
+    </article>
   </div>
 
   <script src="/app.js"></script>

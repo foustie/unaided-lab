@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   background: var(--ink);
   color: var(--bg);
@@ -56,12 +60,16 @@ a {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(circle at 72% 48%, rgba(9, 9, 11, 0.05) 0%, rgba(9, 9, 11, 0.64) 54%, rgba(9, 9, 11, 0.94) 100%);
+  background: radial-gradient(circle at 72% 48%, rgba(10, 10, 11, 0.06) 0%, rgba(10, 10, 11, 0.64) 55%, rgba(10, 10, 11, 0.94) 100%);
 }
 
-.shell {
+.page {
   position: relative;
   z-index: 2;
+}
+
+/* First viewport: pure monochrome aura */
+.hero-screen {
   min-height: 100dvh;
   max-width: 1200px;
   margin: 0 auto;
@@ -76,7 +84,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .logo {
@@ -85,22 +92,6 @@ a {
   font-weight: 700;
   letter-spacing: 0.12em;
   white-space: nowrap;
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  font-size: 14px;
-  color: var(--ink-soft);
-}
-
-.links a {
-  white-space: nowrap;
-}
-
-.links a:hover {
-  color: var(--ink);
 }
 
 .center {
@@ -171,50 +162,132 @@ a {
   border-color: var(--ink);
 }
 
-.bottom {
+.hero-foot {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 16px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
   font-size: 13.5px;
   color: var(--ink-muted);
 }
 
-.proofs {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
-.proofs a,
-.llms {
+.hero-foot a {
   white-space: nowrap;
 }
 
-.proofs a:hover,
-.llms:hover {
+.hero-foot a:hover {
   color: var(--ink);
 }
 
-.sep {
-  opacity: 0.45;
+/* On-page manifesto section: austere, zero cards, pure typography */
+.essay {
+  position: relative;
+  background: rgba(10, 10, 11, 0.92);
+  border-top: 1px solid var(--line);
+}
+
+.essay-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 96px 36px 72px;
+}
+
+.essay-block {
+  margin-bottom: 72px;
+}
+
+.essay-block h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(28px, 3.8vw, 40px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 0 0 24px;
+  color: var(--ink);
+}
+
+.essay-block p {
+  font-size: 16.5px;
+  line-height: 1.72;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+  max-width: 64ch;
+}
+
+.essay-block p strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.list {
+  border-top: 1px solid var(--line);
+}
+
+.row {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.row h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.row p {
+  font-size: 15.5px;
+  line-height: 1.62;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.row a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+}
+
+.row a:hover {
+  text-decoration-color: var(--ink);
+}
+
+.essay-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+  color: var(--ink-muted);
+}
+
+.essay-foot a {
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.essay-foot a:hover {
+  color: var(--ink);
+}
+
+.foot-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 @media (max-width: 640px) {
-  .shell {
+  .hero-screen {
     padding: 22px 20px;
   }
-  .links {
-    gap: 16px;
-  }
-  .sep {
-    display: none;
-  }
-  .proofs {
-    gap: 14px;
+  .essay-inner {
+    padding: 64px 20px 48px;
   }
 }
