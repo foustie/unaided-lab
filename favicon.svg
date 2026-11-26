@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0A0A0B"/>
-  <text x="15" y="45" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#F5F5F5">U</text>
-  <circle cx="48" cy="41" r="3.8" fill="#8A8A8E"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="7" fill="#0A0A0B"/>
+  <path d="M14.2 7.5C9.6 7.5 7 11 7 16C7 21 9.6 24.5 14.2 24.5" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M14.2 11.8C11.7 11.8 10.5 13.6 10.5 16C10.5 18.4 11.7 20.2 14.2 20.2" stroke="#A1A1A6" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M17.8 7.5C22.4 7.5 25 11 25 16C25 21 22.4 24.5 17.8 24.5" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round"/>
+  <path d="M17.8 11.8C20.3 11.8 21.5 13.6 21.5 16C21.5 18.4 20.3 20.2 17.8 20.2" stroke="#A1A1A6" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="13.8" y1="16" x2="18.2" y2="16" stroke="#F5F5F5" stroke-width="1.8" stroke-linecap="round"/>
 </svg>
