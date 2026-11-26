@@ -3,106 +3,65 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Unaided Lab: AI that makes you smarter without it</title>
-  <meta name="description" content="An open public-good lab working to ensure that AGI benefits all of our brains. Free anti-dependency learning tools, global scholarship blueprints, and 48-hour unaided human benchmarks.">
-  <meta property="og:title" content="Unaided Lab: AI that makes you smarter without it">
-  <meta property="og:description" content="Win the battle, lose the war. Unaided Lab is an open lab working to ensure that AGI benefits all of our brains.">
+  <title>Unaided Lab</title>
+  <meta name="description" content="AI that makes you smarter without it. Open lab working to ensure that AGI benefits all of our brains.">
+  <meta property="og:title" content="Unaided Lab">
+  <meta property="og:description" content="AI that makes you smarter without it.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body data-mode="unaided">
   <canvas id="cortex-canvas" aria-hidden="true"></canvas>
-  <div class="scanline" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
 
-  <div class="page">
-    <header class="topbar">
-      <div class="brand">
-        <span class="status-led" aria-hidden="true"></span>
-        <span class="brand-name">UNAIDED LAB</span>
-        <span class="brand-sep">/</span>
-        <span class="brand-sub">OPEN COGNITIVE COLLECTIVE</span>
-      </div>
-      <div class="top-links">
-        <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GITHUB</a>
-        <a href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">PROTOCOL</a>
-        <a href="https://diyar.atla.kz" target="_blank" rel="noopener">FOUNDER</a>
-      </div>
+  <div class="shell">
+    <header class="top">
+      <a class="logo" href="/">
+        <span class="led" aria-hidden="true"></span>
+        <span>UNAIDED LAB</span>
+      </a>
+      <nav class="links">
+        <a href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/foustie/unaided-lab/blob/main/MANIFESTO.md" target="_blank" rel="noopener">Manifesto</a>
+        <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Founder</a>
+      </nav>
     </header>
 
-    <main class="stage">
-      <section class="hero-block">
-        <div class="telemetry-row" aria-live="polite">
-          <span class="pill" id="state-pill">STATE: UNAIDED RECALL</span>
-          <span class="tele-item">CORTEX <strong id="val-load">88%</strong></span>
-          <span class="tele-item">FREQ <strong id="val-hz">38.4 Hz (GAMMA)</strong></span>
-          <span class="tele-item">48H TRANSFER <strong id="val-ret">HIGH</strong></span>
+    <main class="center">
+      <h1 class="headline">
+        AI that makes you smarter <span class="accent">without it.</span>
+      </h1>
+
+      <p class="sub">
+        Open lab working to "ensure that AGI benefits all of our brains."
+      </p>
+
+      <div class="controls">
+        <div class="switch" role="tablist" aria-label="Cortex state">
+          <button class="sw-btn" type="button" role="tab" aria-selected="false" data-mode="crutch">Crutch</button>
+          <button class="sw-btn is-active" type="button" role="tab" aria-selected="true" data-mode="unaided">Unaided</button>
         </div>
 
-        <h1 class="motto">
-          AI that makes you smarter <em>without it.</em>
-        </h1>
-
-        <p class="manifesto">
-          Everyone focuses on scaling AI compute while forgetting what happens to human brains. Every frontier model is trained to hand out instant answers: you paste a hard problem into a chat box, win the battle, and lose the war. Unaided Lab is an open lab where anyone can contribute and actively work to <span class="quote-highlight">"ensure that AGI benefits all of our brains."</span>
-        </p>
-
-        <div class="mode-dock">
-          <div class="mode-switch" role="tablist" aria-label="Brain activity simulation mode">
-            <button class="mode-btn" type="button" role="tab" aria-selected="false" data-mode="crutch">
-              <span class="dot"></span>
-              PROMPT CRUTCH
-            </button>
-            <button class="mode-btn is-active" type="button" role="tab" aria-selected="true" data-mode="unaided">
-              <span class="dot"></span>
-              UNAIDED BRAIN
-            </button>
-          </div>
-          <p class="mode-caption" id="mode-caption">
-            Active retrieval firing across pathways. Move cursor or tap canvas to trigger synaptic recall.
-          </p>
+        <div class="eeg-inline" aria-label="Live brainwave trace">
+          <canvas id="eeg-canvas" height="44"></canvas>
+          <span class="eeg-stat" id="eeg-stat">38 Hz</span>
         </div>
-
-        <div class="eeg-wrap" aria-label="Live simulated EEG brainwave monitor">
-          <div class="eeg-head">
-            <span>EEG TRACE // PREFRONTAL RETRIEVAL MONITOR</span>
-            <span id="eeg-channel">CH-01 GAMMA SYNC · LIVE</span>
-          </div>
-          <canvas id="eeg-canvas" height="78"></canvas>
-        </div>
-      </section>
-
-      <section class="specimen-strip" aria-label="Proof and open lab tracks">
-        <div class="strip-col">
-          <div class="col-label">01 / PROVEN TESTBED</div>
-          <div class="col-main">
-            <strong>7,630+ students</strong> on <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep</a> ($0 ads) · Backed by <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a> ($10K, Grant #8450)
-          </div>
-        </div>
-
-        <div class="strip-col">
-          <div class="col-label">02 / WHAT WE BUILD (FREE FOREVER)</div>
-          <div class="col-main">
-            Anti-dependency learning engines · Honest global university outcomes &amp; full-ride <a href="https://github.com/foustie/unaided-lab/blob/main/datasets/scholarships-2027.json" target="_blank" rel="noopener">scholarship blueprints</a> · Open 48h human-uplift benchmarks
-          </div>
-        </div>
-
-        <div class="strip-col strip-cta">
-          <div class="col-label">03 / JOIN THE OPEN LAB</div>
-          <div class="cta-row">
-            <a class="action-primary" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute on GitHub</a>
-            <a class="action-secondary" href="mailto:dzakpelov@gmail.com">Email Diyar</a>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
 
-    <footer class="foot">
-      <span>Started by <a href="https://diyar.atla.kz" target="_blank" rel="noopener">Diyar Zhakpelov</a> (18, Almaty) for students everywhere</span>
-      <span><a href="/llms.txt">llms.txt</a> · <a href="https://github.com/foustie/unaided-lab/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contributing</a></span>
+    <footer class="bottom">
+      <div class="proofs">
+        <a href="https://entprep.org" target="_blank" rel="noopener">ENTprep (7.6K students, $0 ads)</a>
+        <span class="sep">/</span>
+        <a href="https://marginalrevolution.com/marginalrevolution/2026/06/emergent-ventures-winners-55th-cohort.html" target="_blank" rel="noopener">Emergent Ventures</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/foustie/unaided-lab/tree/main/datasets" target="_blank" rel="noopener">Open Datasets</a>
+      </div>
+      <a class="cta" href="https://github.com/foustie/unaided-lab" target="_blank" rel="noopener">Contribute -&gt;</a>
     </footer>
   </div>
 
