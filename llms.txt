@@ -1,0 +1,19 @@
+# Unaided Lab
+
+> AI that makes you smarter without it.
+> An open public-good research lab building free anti-dependency AI learning tools, global university and scholarship blueprints, and open benchmarks measuring real unaided human score gains.
+
+## Mission
+Frontier AI models are trained to hand out instant answers, which leaves students cognitively dependent when the prompt box disappears. Meanwhile, exam preparation and university admissions guidance remain locked behind expensive courses and consulting agencies. Unaided Lab builds free, open-source infrastructure so any student anywhere can train their own mind and access transparent pathways into top universities and full-ride scholarships.
+
+## Active Tracks
+- **01. ENTprep (Live Testbed):** Free bilingual (RU/KZ) AI trainer for Kazakhstan's national exam (ENT). Reached 7,630+ students on $0 paid ads with 28,593 structured questions. Backed by Emergent Ventures ($10,000, Grant #8450). URL: https://entprep.org
+- **02. Global Student Blueprint (Building Now):** Open, verified reverse-engineered roadmaps comparing local university grants against 100% funded international scholarships (Stipendium Hungaricum, Global Korea Scholarship, Chinese CSC, EU tuition-free programs), paired with real graduate employment statistics and honest student reviews.
+- **03. Human Uplift Benchmark (Research):** Open randomized evaluation harness measuring 48-hour unaided closed-book retention and transfer across AI study loops.
+- **04. Open Datasets:** Community-maintained JSON registries of verified university cutoffs, graduate outcomes, scholarship deadlines, and exam curricula.
+
+## Founder & Links
+- Founder: Diyar Zhakpelov (18, Almaty, Kazakhstan)
+- Portfolio & Proofs: https://diyar.atla.kz
+- GitHub: https://github.com/foustie/unaided-lab
+- Contact: dzakpelov@gmail.com

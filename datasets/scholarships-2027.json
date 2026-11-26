@@ -1,0 +1,97 @@
+{
+  "schema_version": "0.1.0",
+  "updated_at": "2026-11-26",
+  "license": "CC-BY-4.0",
+  "note": "Starter open dataset of 100% funded international scholarships open to Central Asian and global applicants. Open a PR to add or verify programs for your country.",
+  "programs": [
+    {
+      "id": "stipendium-hungaricum",
+      "name": "Stipendium Hungaricum",
+      "country": "Hungary",
+      "degree_levels": ["Bachelor", "Master", "PhD", "Preparatory"],
+      "funding": {
+        "tuition": "100% covered",
+        "monthly_stipend": true,
+        "housing": "Free dormitory or monthly housing allowance",
+        "health_insurance": true
+      },
+      "typical_window": "December to January (annual)",
+      "core_requirements": [
+        "High school diploma or transcript",
+        "Language certificate (typically IELTS 5.5 to 6.5 for English programs)",
+        "Motivation letter and medical certificate",
+        "Sending partner nomination (in Kazakhstan: Center for International Programs / eGov)"
+      ],
+      "official_urls": [
+        "https://stipendiumhungaricum.hu",
+        "https://bolashak.gov.kz"
+      ]
+    },
+    {
+      "id": "gks-korea",
+      "name": "Global Korea Scholarship (GKS)",
+      "country": "South Korea",
+      "degree_levels": ["Undergraduate", "Graduate"],
+      "funding": {
+        "tuition": "100% covered",
+        "monthly_stipend": true,
+        "housing": "Covered via monthly allowance",
+        "flight": "Round-trip economy airfare",
+        "language_year": "1-year intensive Korean language program included"
+      },
+      "typical_window": "September to October (Undergraduate) / February to March (Graduate)",
+      "core_requirements": [
+        "Apostilled academic transcripts and graduation certificate",
+        "Personal statement and study plan",
+        "Recommendation letters",
+        "Embassy track or University track application"
+      ],
+      "official_urls": [
+        "https://www.studyinkorea.go.kr"
+      ]
+    },
+    {
+      "id": "china-csc",
+      "name": "Chinese Government Scholarship (CSC)",
+      "country": "China",
+      "degree_levels": ["Bachelor", "Master", "PhD"],
+      "funding": {
+        "tuition": "100% covered",
+        "monthly_stipend": true,
+        "housing": "Free university dormitory or subsidy",
+        "health_insurance": true
+      },
+      "typical_window": "January to April (varies by embassy and university)",
+      "core_requirements": [
+        "Academic transcripts and diploma",
+        "Study plan or research proposal",
+        "Language proof (HSK or IELTS/TOEFL depending on track)",
+        "Foreigner Physical Examination Form"
+      ],
+      "official_urls": [
+        "https://www.campuschina.org"
+      ]
+    },
+    {
+      "id": "kz-state-grant-ent",
+      "name": "Kazakhstan National State Educational Grant (ENT)",
+      "country": "Kazakhstan",
+      "degree_levels": ["Bachelor"],
+      "funding": {
+        "tuition": "100% covered",
+        "monthly_stipend": true,
+        "housing": "Priority university dormitory access"
+      },
+      "typical_window": "Main ENT May 10 to July 10 (2 attempts; registration in April); grant competition in July",
+      "core_requirements": [
+        "Main ENT score (120 questions, 140 max points, 5 subjects)",
+        "Minimum thresholds: 50+ overall (65 to 70+ for national universities), 5+ per profile subject and History of KZ, 3+ for Reading and Math Literacy",
+        "Application via eGov or Qapps with up to 4 university/program choices"
+      ],
+      "official_urls": [
+        "https://testcenter.kz",
+        "https://atameken-rankings.kz"
+      ]
+    }
+  ]
+}
